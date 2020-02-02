@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Git!")
+        Text(reverse(text: "Hello, Git!"))
     }
 }
 
@@ -18,4 +18,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+func reverse(text: String) -> String {
+    return String(text.reversed())
 }
